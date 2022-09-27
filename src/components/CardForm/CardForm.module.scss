@@ -1,0 +1,25 @@
+@import '../../styles/settings.scss';
+
+.cardForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.inputName {
+  padding: 0 0 10px 0;
+}
+
+@media (max-width: 767px) {
+  .cardForm {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 0 $base-size 0;
+  }
+
+  .inputName {
+    padding: 0;
+  }
+}
