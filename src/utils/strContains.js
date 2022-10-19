@@ -5,7 +5,6 @@ const strContains = (firstString, secondString) => {
 	} else {
 			return false;
 	};
-
 };
 
 export default strContains;

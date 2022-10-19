@@ -2,7 +2,6 @@ import { createStore } from 'redux';
 import shortid from 'shortid';
 import initialState from './initialState';
 import strContains from '../utils/strContains';
-// import { useSelector } from 'react-redux';
 
 //selectors
 export const getFilteredCards = ({ cards, searchString }, columnId) => cards
@@ -16,7 +15,6 @@ export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 export const addCard = payload => ({ type: 'ADD_CARD', payload });
 
 export const updateSearchString = payload => ({ type: 'UPDATE_SEARCHSTRING', payload });
-
 
 const reducer = (state, action) => {
 	switch(action.type){
@@ -33,7 +31,6 @@ const reducer = (state, action) => {
 			return state;
 	};
 };
-
 
 const store = createStore(
   reducer,
