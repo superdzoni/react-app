@@ -5,7 +5,7 @@ import TextInput from './../TextInput/TextInput';
 import { useDispatch } from 'react-redux';
 import { addCard } from '../../redux/store';
 
-const CardForm = (props) => {
+const CardForm = props => {
     const [title, setTitle] = useState('');
     const dispatch = useDispatch();
 
