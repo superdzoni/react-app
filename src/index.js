@@ -5,16 +5,16 @@ import App from './App';
 import './styles/normalize.scss';
 import './styles/global.scss';
 import 'font-awesome/css/font-awesome.min.css';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(
+ReactDOM.render((
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
     </BrowserRouter>
-  </React.StrictMode>);
+  </React.StrictMode>
+),
+document.getElementById('root'));
